@@ -85,6 +85,7 @@
     
 // }
 // console.log(rev)
+/*
 
 let num = 12345
 let rev = 0;
@@ -131,8 +132,104 @@ rev = 5432 * 10 + 1 ==> 54321
 
 */
 
-let str1 = "JavaScript"
+// let str1 = "JavaScript"
 
-let reverse = str1.split("").reverse().join("@")
+// let reverse = str1.split("").reverse().join("@")
 
-console.log(reverse)
+// console.log(reverse)
+
+
+
+//while loop
+
+// let i = 1
+
+// while(i<=5)
+// {
+//     console.log(i)
+//     i++
+// }
+
+// for(let i= 1; i<=100; i++)
+// {
+//     console.log("Email Sent to: " + i + " user")
+// }
+
+// let status = "Processing"
+
+// while(status === "Processing")
+// {
+//     console.log("Checking report status....")
+// }
+
+// let attempt = 0
+// let pinCorrect = false
+
+// while(attempt < 3 && !pinCorrect)
+// {
+//     console.log("Enter Pin")
+
+// }
+/*
+for
+1. Use when you generally know the number of iteration
+2. initilization, condition, increment/decrement all are usally togerther
+3. arrays, list, set
+
+while
+1. Use when you unknow the number of iteration
+2. condition is the main focus
+3. Good for condition based works
+
+*/
+
+// let i = 6
+
+// while(i<=5)
+// {
+//     console.log(i)
+//     i++
+// }
+
+let i = 6
+
+do
+{
+    console.log(i)
+    i++
+}while(i<=5)
+
+//do..while loop when you want to execute the code atleast once eventhough the condition false
+
+//const prompt = require("prompt-sync")()
+
+// console.log(typeof(prompt))
+
+// let pin;
+
+// do
+// {
+//     pin = prompt("Enter your pin: ")
+//     if(pin !== "1234")
+//     {
+//         console.log("Incorrect Pin")
+//     }
+// }while(pin !== "1234") 
+    
+// console.log("Pin Accepted")
+
+// //console.log(typeof(pin))
+
+const prompt = require("prompt-sync")()
+
+let answer
+
+do
+{
+    console.log("Product added to cart")
+
+    answer = prompt("Add another product? Yes/No: ")
+
+} while(answer === "Yes")
+console.log("Shopping Completed")
+
