@@ -18,7 +18,7 @@ function add(a, b)
     console.log(a+b)
 }
 
-add(10, 20)
+add(10, 20) //argument pass
 
 add(50, 50)
 
@@ -53,6 +53,7 @@ function add(a, b)
 
 let c = add(10, 30) + 10
 console.log(c)
+
 
 
 function sum(a, b)
