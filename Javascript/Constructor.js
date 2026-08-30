@@ -42,3 +42,5 @@ class Employee
 
 let emp = new Employee("Bala", 102, 45000)
 emp.displayEmployeeDetails()
+
+console.log(emp)
