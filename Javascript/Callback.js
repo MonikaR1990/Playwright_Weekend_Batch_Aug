@@ -16,7 +16,6 @@
 // function orderFood(callback)
 // {
 //     console.log("Preparing Food")
-
 //     setTimeout(()=>{
 //         console.log("Food is Ready")
 //         callback()
