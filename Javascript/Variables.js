@@ -4,7 +4,7 @@ console.log("Welcome")
 //Variables
 
 let name = "Bala"
-let age = 12
+//let age = 12
 let isActive = true
 
 let a; //variable Declartion
