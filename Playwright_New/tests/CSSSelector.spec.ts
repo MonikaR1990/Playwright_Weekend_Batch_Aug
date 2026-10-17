@@ -91,7 +91,7 @@ test('CSS Selector', async({page})=>{
 
 
 // <div >
-//     <input>  //first-child  //nth-child(1)
+//     <inpform>inputut>  //first-child  //nth-child(1)
 //     <input>
 //     <input>
 //     <input>  //last-child
