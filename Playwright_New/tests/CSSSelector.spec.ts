@@ -56,6 +56,21 @@ test('CSS Selector', async({page})=>{
     await page.locator('a:has-text("AmazonBasics")').click()
     await page.locator('a:has-text("Flights")').click()
 
+
+    await page.goto("https://www.google.com/")
+    await page.locator('[role="navigation"] [href*="store.google.com"]').click()
+
+
+    await page.locator('form>div').first().click()
+
+    await page.locator('form>div').last().click()
+
+    await page.locator('text= Login').click()
+
+    await page.locator('text= Login').first().click()
+    
+
+
 })
 
 //unreadable format value should be avoid
@@ -97,10 +112,10 @@ test('CSS Selector', async({page})=>{
 //     <input>  //last-child
 // </div>
 
-//input:first-child
-//input:last-child
-//input:nth-child(1)
-//input:nth-child(2)
+//li:first-child
+//li:last-child
+//li:nth-child(1)
+//li:nth-child(2)
 
 
 //visible text

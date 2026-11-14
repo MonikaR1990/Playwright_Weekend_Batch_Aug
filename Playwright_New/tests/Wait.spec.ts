@@ -216,7 +216,7 @@ waitForLoadState()
     waitForTimeOut()
     waitForEvent()
     waitForRequest()
-    waitForResponse
+    waitForResponse()
     */
 
 

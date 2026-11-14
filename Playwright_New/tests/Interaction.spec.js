@@ -6,19 +6,20 @@ test('Interactions', async({page})=>{
 
     await page.goto("https://testautomationpractice.blogspot.com/") 
 
-    //1. fill() ==> Type the text (textbox, searchox)
+    //1. fill() ==> Type the text (textbox, searchox, combobox)
     await page.locator("#name").fill("Balaji")
-    await page.fill("#name", "Bala")
+    await page.locator('#name').fill("Balaji")
+    await page.fill('#name', "Balaji")
 
     //2. pressSequentially() ==> Type character by character
     await page.locator("#email").pressSequentially("Kumaran")
 
-    // //3. type()
+    // //3. type() 
     // await page.locator('#phone').type("899867667")
 
     //4. click()  //button, radio, link, imglink
     await page.locator('.start').click()
-    //await page.click('.start')
+    await page.click('.start')
 
     //5. clear() //clear text
     await page.locator('#textarea').fill("Chennai")
@@ -37,8 +38,8 @@ test('Interactions', async({page})=>{
     await page.uncheck('#tuesday')
 
     //8. Select
-    await page.locator('#country').selectOption('france') //select by value (value attrbute)
-    await page.locator('#country').selectOption({label: 'Japan'}) //select by visisble text
+    await page.locator('#country').selectOption('germany') //select by value (value attrbute)
+    await page.locator('#country').selectOption({label: 'France'}) //select by visisble text
     await page.locator('#country').selectOption({index: 4}) //sellect the value by index
 
     await page.locator('#colors').selectOption(['blue', 'green', 'yellow'])
@@ -60,7 +61,7 @@ test('Interactions', async({page})=>{
 
     //12. Right Click
     await page.getByText("Copy Text").click() //left click
-    await page.getByText("Copy Text").click({button: 'right'})
+    await page.getByText("Copy Text").click({button:'right'})
     
     //13.Drag and Drop
     await page.dragAndDrop('#draggable', '#droppable')
@@ -68,14 +69,14 @@ test('Interactions', async({page})=>{
     //14. focus()
     await page.locator('#Wikipedia1_wikipedia-search-input').focus()
 
-    //15. press()
+    //15. press() - Keyboard button
     await page.locator('#Wikipedia1_wikipedia-search-input').fill("Selenium")
     //await page.locator('#Wikipedia1_wikipedia-search-input').press('Enter')
     await page.locator('#Wikipedia1_wikipedia-search-input').press('Tab')
     await page.locator('.wikipedia-search-button').press('Enter')  
 
     //16. Scroll
-    //await page.getByText("Upload Multiple Files").scrollIntoViewIfNeeded()
+    await page.locator('//button[text()="Upload Multiple Files"]').scrollIntoViewIfNeeded()
 
     //17. Mouse (pixel based x axis and y axis)
     await page.mouse.wheel(0, 1000) //Scroll Down
