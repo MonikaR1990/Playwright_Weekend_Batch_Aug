@@ -5,5 +5,5 @@ test('Video_Record', async({page})=>{
     await page.locator('#user-name').fill('standard_user')
     await page.locator('#password').fill('secret_sauce')
     await page.locator('#login-button').click()
-    await expect(page).toHaveURL(/inventory56576.html/)
+    await expect(page).toHaveURL(/inventory.html/)
 })
